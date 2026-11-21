@@ -1,22 +1,22 @@
-nama: Plantvy deskripsi: jangan sampe tanaman haus dan laper
+nama: Plantvy 
+deskripsi: jangan sampe tanaman haus dan laper
 
 fitur:
-
 ada indikator hungru, thirsty, health.
 button untuk kasih makan dan minum
 ekspresi plant nya
+
 arsitektur:
+- View: Semua yang tampil di layar HP, seperti gambar tanaman, bar status, dan tombol aksi.
+- ViewModel: Otak yang mengatur jalannya aplikasi, seperti menghitung level air dan darah, mengatur timer, serta mengolah data sensor.
+- Model: Tempat menyimpan data kondisi tanaman ke dalam database HP.
 
-View: Semua yang tampil di layar HP, seperti gambar tanaman, bar status, dan tombol aksi.
-ViewModel: Otak yang mengatur jalannya aplikasi, seperti menghitung level air dan darah, mengatur timer, serta mengolah data sensor.
-Model: Tempat menyimpan data kondisi tanaman ke dalam database HP.
 teknologi:
-
-Kotlin: Bahasa utama untuk membuat aplikasi ini.
-Jetpack Compose: Alat untuk membuat tampilan layar dan animasi tanaman agar mulus dan modern.
-Room Database: Tempat menyimpan data kondisi tanaman di HP agar statusnya tidak hilang saat aplikasi ditutup.
-Coroutines dan Flow: Pengatur proses otomatis di balik layar, seperti menghitung penurunan haus lapar dan membaca data sensor tanpa membuat aplikasi lemot.
-Android SensorManager: Penghubung aplikasi ke sensor gerak dan sensor cahaya di HP.
+- Kotlin: Bahasa utama untuk membuat aplikasi ini.
+- Jetpack Compose: Alat untuk membuat tampilan layar dan animasi tanaman agar mulus dan modern.
+- Room Database: Tempat menyimpan data kondisi tanaman di HP agar statusnya tidak hilang saat aplikasi ditutup.
+- Coroutines dan Flow: Pengatur proses otomatis di balik layar, seperti menghitung penurunan haus lapar dan membaca data sensor tanpa membuat aplikasi lemot.
+- Android SensorManager: Penghubung aplikasi ke sensor gerak dan sensor cahaya di HP.
 
 - sensor: Sensor Gerak (Akselerometer)
   Fungsinya: Mendeteksi kalau HP kamu lagi digoyang-goyang Efeknya di aplikasi: Begitu HP digoyang, daun tanamannya bakal ikut goyang-goyang
